@@ -6,6 +6,12 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+:root {
+  --color-white: #f8fafc;
+  --color-grey: #cbd5e1;
+  --color-blue: rgb(60, 140, 198);
+}
+
 .container {
   height: 100vh;
   display: grid;
@@ -13,8 +19,8 @@
 }
 
 .sidebar {
-  background-color: rgb(60, 140, 198);
-  color: white;
+  background-color: var(--color-blue);
+  color: var(--color-white);
   display: grid;
   align-content: start;
   gap: 3rem;
@@ -25,12 +31,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  fill: white;
+  fill: var(--color-white);
 }
 
 li svg {
   width: 1.5rem; 
-  fill: white;
+  fill: var(--color-white);
 }
 
 ul li {
@@ -45,7 +51,7 @@ ul li {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 6fr;
-  background-color: aquamarine;
+  background-color: var(--color-grey);
 }
 
 .header {
@@ -54,17 +60,80 @@ ul li {
   
   display: grid;
   grid-template-rows: 1fr 2fr;
+  gap: 40px;
+
+  padding: 20px 40px;
+  background-color: var(--color-white);
+
+  box-shadow: 0 8px 4px -6px grey;
 }
 
 .search {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr ;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search svg {
+  width: 2rem;
+}
+
+.search input {
+  width: 60%;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: var(--color-grey);
+  border: none;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 1.5rem;
 }
 
 .greeting {
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr;
+  grid-template-columns: 6fr 3fr;
+  align-items: center;
 }
+
+.greet-user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.upload-btns {
+  display: flex;
+  gap: 30px;
+}
+
+.upload-btns button {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  width: 8rem;
+  padding: 10px 20px;
+  background-color: var(--color-blue);
+  border-radius: 30px;
+  border: none;
+}
+
+#hi-text {
+  font-size: 1rem;
+}
+
+#greet-name {
+  font-size: 1.5rem;
+}
+
+
 
 .content {
   display: grid;
