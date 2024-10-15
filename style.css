@@ -24,14 +24,15 @@
   display: grid;
   align-content: start;
   gap: 3rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   fill: var(--color-white);
+  font-size: 1.5em;
 }
 
 li svg {
@@ -40,7 +41,7 @@ li svg {
 }
 
 ul li {
-  font-size: 1.5rem;
+  font-size: 1rem;
   list-style-type: none;
   display: flex;
   gap: 1.5rem;
@@ -50,7 +51,6 @@ ul li {
 .main-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 6fr;
   background-color: var(--color-grey);
 }
 
@@ -60,12 +60,12 @@ ul li {
   
   display: grid;
   grid-template-rows: 1fr 2fr;
-  gap: 40px;
 
   padding: 20px 40px;
   background-color: var(--color-white);
 
   box-shadow: 0 8px 4px -6px grey;
+  height: fit-content;
 }
 
 .search {
@@ -83,25 +83,28 @@ ul li {
 
 .search input {
   width: 60%;
+  height: 50%;
+  align-self: center;
   margin-left: 10px;
   border-radius: 20px;
   background-color: var(--color-grey);
   border: none;
   font-size: 1rem;
-  padding: 10px;
+  padding-left: 10px;
 }
 
 .avatar {
   display: flex;
   align-items: center;
-  gap: 30px;
-  font-size: 1.5rem;
+  gap: 20px;
+  font-size: 1rem;
 }
 
 .greeting {
   display: grid;
-  grid-template-columns: 6fr 3fr;
+  grid-template-columns: 2fr 3fr;
   align-items: center;
+  height: fit-content;
 }
 
 .greet-user {
@@ -116,7 +119,7 @@ ul li {
 }
 
 .upload-btns button {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--color-white);
   width: 8rem;
   padding: 10px 20px;
@@ -126,20 +129,20 @@ ul li {
 }
 
 #hi-text {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 #greet-name {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .content {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-column: 1 / -1;
   padding: 20px;
-  gap: 30px;
+  gap: 20px;
 }
 
 .project.cards {
@@ -149,7 +152,7 @@ ul li {
 }
 
 .project-card h1 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
@@ -157,17 +160,18 @@ ul li {
   display: grid;
   background-color: var(--color-white);
   padding: 20px 50px;
-  height: 300px;
   border-radius: 10px;
   border-left: 10px solid rgb(247, 183, 55);
+  min-height: 300px;
 }
 
 .projects {
-  grid-row: 1 / 3;
+  grid-row: 1 / -1;
+  align-self: stretch;
 }
 
 .content > div > h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
@@ -182,7 +186,7 @@ ul li {
 }
 
 .card-icons svg {
-  width: 2rem;
+  width: 1.5rem;
 }
 
 .announcement-card {
@@ -192,7 +196,12 @@ ul li {
 }
 
 .announcement-card h1 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+div p {
+  font-size: 0.8rem;
+  color: grey;
 }
 
 .announcement-card div {
@@ -203,7 +212,6 @@ ul li {
   background-color: var(--color-white);
   border-radius: 10px;
   padding: 30px;
-  align-self: stretch;
 }
 
 .trending {
