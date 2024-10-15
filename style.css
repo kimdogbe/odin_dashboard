@@ -133,14 +133,53 @@ ul li {
   font-size: 1.5rem;
 }
 
-
-
 .content {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-column: 1 / -1;
+  padding: 20px;
+  gap: 30px;
+}
+
+.project.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project-card h1 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-card {
+  display: grid;
+  background-color: var(--color-white);
+  padding: 20px 50px;
+  height: 300px;
+  border-radius: 10px;
+  border-left: 10px solid rgb(247, 183, 55);
 }
 
 .projects {
   grid-row: 1 / 3;
+}
+
+.content > div > h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  align-self: center;
+}
+
+.card-icons {
+  display: flex;
+  gap: 20px;
+  justify-self: end;
+}
+
+.card-icons svg {
+  width: 2rem;
 }
