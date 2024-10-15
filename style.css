@@ -136,6 +136,7 @@ ul li {
 .content {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-column: 1 / -1;
   padding: 20px;
   gap: 30px;
@@ -182,4 +183,40 @@ ul li {
 
 .card-icons svg {
   width: 2rem;
+}
+
+.announcement-card {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  padding: 30px ;
+}
+
+.announcement-card h1 {
+  font-size: 1.2rem;
+}
+
+.announcement-card div {
+  margin: 20px 0px;
+}
+
+.trending-card {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  padding: 30px;
+  align-self: stretch;
+}
+
+.trending {
+  display: grid;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.username {
+  font-weight: bolder;
 }
